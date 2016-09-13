@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Moodify</title>
+        <title>Celebrity Namer</title>
         <!--Boostrap's CSS-->
         <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
         <!--Custom CSS-->
         <link rel="stylesheet" type="text/css" href="./css/style.css">
     </head>
+
+
+
     <body>
         <div class="container" id="page-container">
             <h1 id="app-name">
-                <span class="glyphicon glyphicon-headphones"></span> moodify
+                <span class="glyphicon glyphicon-star"></span> Celebrity Namer
             </h1>
             <!-- NB: glyphicon halflings are generally not free, but the developer made them free in bootstrap -->
 
             <h2 id="page-header">
-                Get song recommendations based on your mood.
+                Find out who the celebrity is:
             </h2>
+            <h3> Simply upload a picture of a celebrity and we will tell you their name.</h3>
             <img id="selected-img" src="">
             <h4 id="track-name"></h4>
 
             <div class="btn-wrapper">
                 <label class="btn btn-info" for="my-file-selector">
                     <input id="my-file-selector" type="file">
-                    Upload a picture of you
+                    Upload a picture here
                 </label>
                 <button type="button" class="btn btn-info" id="refreshbtn">Another song please</button>
             </div>

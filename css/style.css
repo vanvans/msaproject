@@ -1,5 +1,5 @@
 html { 
-    background: url("http://static.vecteezy.com/system/resources/previews/000/084/251/original/christmas-bokeh-vector-background.jpg") no-repeat center center fixed; 
+    background: url("http://cdn.pcwallart.com/images/bokeh-wallpaper-2.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -20,18 +20,35 @@ button#refreshbtn {
 }
 
 h2#page-header {
-    padding-top:20px;
-    padding-bottom:20px;
+    padding-top:10px;
+    padding-bottom: -20px;
+    font-family: monospace;
+}
+
+h3{
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+    font-family: monospace;
+    background: magenta;
+    height: 30px;
+
+
 }
 
 body #page-container {
-    margin-top: 150px;
+    margin-top: 40px;
     text-align: center;
     margin-bottom: 40px;
 }
 
 .btn-wrapper {
     padding: 20px 0;
+    opacity: 0.7;
+}
+
+.btn-wrapper:hover{
+    opacity: 1.0;
 }
 
 input#my-file-selector {

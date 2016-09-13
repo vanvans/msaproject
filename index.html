@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Celebrity Namer</title>
+        <title>Quote Generator</title>
         <!--Boostrap's CSS-->
         <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
         <!--Custom CSS-->
@@ -13,25 +13,22 @@
     <body>
         <div class="container" id="page-container">
             <h1 id="app-name">
-                <span class="glyphicon glyphicon-star"></span> Celebrity Namer
+                <span class="glyphicon glyphicon-star"></span> Quote Generator
             </h1>
             <!-- NB: glyphicon halflings are generally not free, but the developer made them free in bootstrap -->
 
             <h2 id="page-header">
-                Find out who the celebrity is:
+                Click to generate a random quote:
             </h2>
-            <h3> Simply upload a picture of a celebrity and we will tell you their name.</h3>
-            <img id="selected-img" src="">
-            <h4 id="track-name"></h4>
+
+            <h4 id="quote"></h4>
 
             <div class="btn-wrapper">
                 <label class="btn btn-info" for="my-file-selector">
-                    <input id="my-file-selector" type="file">
-                    Upload a picture here
+                    Click here!
                 </label>
                 <button type="button" class="btn btn-info" id="refreshbtn">Another song please</button>
             </div>
-            <div id="musicplayer"></div>
         </div>
         <!-- 
             NB: You generally do not want to publically expose the server structure (eg. ./node_modules/...)
@@ -44,8 +41,6 @@
         <script src="./node_modules/jquery/dist/jquery.min.js"></script>
         <!--Bootstrap Script-->
         <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        <!--SoundCloud SDK-->
-        <script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
         <!--Custom Script-->
         <script src="./js/main.js"></script>
     </body>

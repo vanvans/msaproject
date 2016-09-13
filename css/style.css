@@ -23,16 +23,6 @@ h2#page-header {
     padding-top:10px;
     padding-bottom: -20px;
     font-family: monospace;
-}
-
-h3{
-    font-size: 17px;
-    color: white;
-    font-weight: bold;
-    font-family: monospace;
-    background: magenta;
-    height: 30px;
-
 
 }
 
@@ -60,6 +50,6 @@ input#my-file-selector {
     display:none;
 }
 
-h4#track-name {
+h4#quote {
     display:none;
 }

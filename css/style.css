@@ -32,11 +32,21 @@ body #page-container {
     margin-bottom: 40px;
 }
 
-#btn-wrapper {
+button #buttons {
     padding: 20px 0;
 
 }
 
-h4#quote {
-    display:none;
+
+#quote {
+    font-size: 20px; 
+
+}
+
+#author {
+    font-size: 10px;
+}
+
+.btn{
+    color: white;
 }

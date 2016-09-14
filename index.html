@@ -8,34 +8,40 @@
         <link rel="stylesheet" type="text/css" href="./css/style.css">
     </head>
 
-
-
     <body>
         <div class="container" id="page-container">
             <h1 id="app-name">
                 <span class="glyphicon glyphicon-star"></span> Quote Generator
             </h1>
             <!-- NB: glyphicon halflings are generally not free, but the developer made them free in bootstrap -->
-
+        <h3><div class="fb-share-button" data-href="http://kitties.azurewebsites.net" data-layout="button" data-size="large" data-mobile-iframe="false"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fkitties.azurewebsites.net%2F&amp;src=sdkpreparse">Share</a></div></h3>
             <h2 id="page-header">
-                Click to generate a random quote:
+                Click to generate a <i>random quote</i>:
             </h2>
 
 
+             <!-- click here button -->
 
             <div id="buttons">
                  <button id="click" class="btn btn-1 pageload-link">Click here!</button>
-            </div> <p>
-            <h3>
-            <div id = "quote"></div></h3><br>
+            </div> 
+            
+        
+            <div class = "quotebox" id="quotebox">
+            <div id = "quote"></div><br>
             <div id = "author"></div>
-    
-        <!-- 
-            NB: You generally do not want to publically expose the server structure (eg. ./node_modules/...)
-            will sort that in later bootcamps with task-runners and the like.
-            For now this is just a demonstration.
-            Alternatively can use CDNs for bootstrap/jquery
-        -->
+            </div>
+
+
+        <!-- Facebook Share Script-->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7";
+         fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
 
         <!--jQuery Script-->
         <script src="./node_modules/jquery/dist/jquery.min.js"></script>

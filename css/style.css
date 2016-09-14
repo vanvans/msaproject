@@ -11,42 +11,94 @@ body {
     background-color: transparent;
 }
 
-h1#app-name {
-    font-size:84px;
+i{
+    font-family: Georgia;
+    color: hotpink;
 }
 
-button#refreshbtn {
-    display:none;
+
+h1#app-name {
+    font-size:64px;
+    font-family: "Century Gothic";
+    text-transform: uppercase;
+    border-bottom: 1px dashed #ffffff;
 }
 
 h2#page-header {
-    padding-top:10px;
-    padding-bottom: -20px;
-    font-family: monospace;
-
+    padding-top: 0px;
+    padding-bottom: 20px;
+    font-family: "Century Gothic";
+    font-size: 24px;
 }
 
 body #page-container {
-    margin-top: 40px;
+    margin-top: 30px;
     text-align: center;
     margin-bottom: 40px;
-}
-
-button #buttons {
-    padding: 20px 0;
+    padding-bottom: 20px;
 
 }
 
-
-#quote {
-    font-size: 20px; 
-
-}
-
-#author {
-    font-size: 10px;
+ #quotebox{
+    position: absolute;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 50%;
+    left: 25%;
+    height: 280px;
+    padding-left: 7px;
+    padding-right: 14px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-bottom: 4px solid;
+	background-image: url("http://i68.tinypic.com/35k4ntj.png");
 }
 
 .btn{
+    color: hot;
+    background: mediumaquamarine;
+    text-transform: uppercase;
+    font-family: Courier New;
+
+}
+
+.btn:hover{
+    background: white;
+    -webkit-transition-duration: 0.7s;
+    transition-duration: 0.7s;
+}
+
+#boxy{
+    background: white;
+    filter: alpha(opacity=30)
+}
+
+#quote {
+    font-size: 20px; 
     color: white;
+    font-family: Courier New, Courier, monospace;
+    letter-spacing: 2px;
+}
+
+#author {
+    font-size: 18px;
+    padding-bottom: 20px;
+    padding-right: 5px;
+    color: white;
+    font-family: century gothic;
+    font-style: italic;
+    text-align: right;
+    text-decoration: italic;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+
+}
+
+h3{
+    text-align: left;
 }

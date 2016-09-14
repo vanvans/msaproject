@@ -9,10 +9,14 @@ $('#click').on('click', function(e) {
         success: function(data){
             var post = data.shift();
             
+            //quote and author added to the page
             $('#quote').html(post.content);
             $('#author').html(post.title);
 
+
             },
+
+
 
         cache: false,
         

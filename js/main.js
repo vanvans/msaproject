@@ -1,6 +1,6 @@
 $('#click').on('click', function (e) {
     e.preventDefault();
-$(document).ready(function() {
+
     var $quote = $('#quote');
     $.ajax({
         type: 'GET',
@@ -16,5 +16,4 @@ $(document).ready(function() {
         },  
         cache: false,
     });
-});
 });

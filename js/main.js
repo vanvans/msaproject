@@ -1,5 +1,6 @@
 $('#click').on('click', function (e) {
     e.preventDefault();
+
     var $quote = $('#quote');
     $.ajax({
         type: 'GET',
@@ -10,7 +11,9 @@ $('#click').on('click', function (e) {
             //quote and author added to the page
             $('#quote').html(post.content);
             $('#author').html(post.title);
-        },
+            $('#click').html("Another!");
+            
+        },  
         cache: false,
     });
 });

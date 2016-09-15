@@ -1,3 +1,6 @@
+$('#click').click
+
+
 
 $('#click').on('click', function(e) {
     e.preventDefault();

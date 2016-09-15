@@ -14,6 +14,7 @@ body {
 b{
     font-size: 13px;
     text-transform: uppercase;
+    color: lightsalmon;
 }
 
 i{
@@ -51,7 +52,7 @@ body #page-container {
     margin-bottom: 40px;
     width: 50%;
     left: 25%;
-    height: 280px;
+    height: 260px;
     padding-left: 7px;
     padding-right: 14px;
     padding-top: 7px;
@@ -78,16 +79,12 @@ body #page-container {
 }
 
 
-#boxy{
-    background: white;
-    filter: alpha(opacity=30)
-}
-
 #quote {
     font-size: 20px; 
     color: white;
     font-family: Courier New, Courier, monospace;
     letter-spacing: 2px;
+    line-height: 22px;
 }
 
 #author {

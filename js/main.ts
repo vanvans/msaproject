@@ -1,7 +1,4 @@
-
-
-$('#click').on('click', function(e) {
-    e.preventDefault();
+$('#click').on('click', function() {
 
     $.ajax({
         type: 'GET',

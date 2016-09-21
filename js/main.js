@@ -1,6 +1,5 @@
-$('#click').on('click', function () {
-
-
+$('#click').on('click', function (e) {
+    e.preventDefault();
     $.ajax({
         type: 'GET',
         url: "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=",
@@ -10,9 +9,7 @@ $('#click').on('click', function () {
             //quote and author added to the page
             $('#quote').html(post.content);
             $('#author').html(post.title);
-            $('#click').html("Another!");
-            
-        },  
+        },
         cache: false,
     });
 });

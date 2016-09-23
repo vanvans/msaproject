@@ -3,7 +3,6 @@ $('#click').on('click', function (e) {
     $.ajax({
         type: 'GET',
         url: "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=",
-        timeout: 3000,
         success: function (data) {
             var post = data.shift();
             //quote and author added to the page
